@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ‹header>
+
+<h1>Laboratorio 10: Variables y Operaciones‹/h1>
+</header>
+‹nav>
+‹a href="#parte1"›Parte 1</a>
+«a href="#parte2"›Parte 2</a>
+<a href="#parte3"›Parte 3</a>
+<a href="#calculadora"›Calculadora‹/a>
+</nav>
+‹main>
+＜！-- Pante 1 -->
+< section id="parte1">
+<h2>Parte 1: Declaración de Variables y Tipos de Datos</h2>
+‹p›Abre la consola del navegador para ver los resultados.‹/p›
+    <script>
+        console. log("=== Parte 1 ===");
+let nombre = "María", edad = 28, esEstudiante = true; console. log("Nombre:", nombre,
+"Edad:", edad, "¿Es estudiante?", esEstudiante);
+nombre = "Carlos"; edad = 35; esEstudiante = false;
+console. log("--- Después del cambio ---");
+console. log("Nombre:", nombre, "Edad:", edad, "¿Es estudiante?", esEstudiante);
+        console. log("=== Parte 4 ===");
+// Variables de entrada (pueden ser modificadas o pedidas por prompt)
+let cantidadAzucar = 5;
+// en kilogramos
+let pesoBananas = 20;
+// en gramos por banana
+// gramos de azúcar
+let gramosAzucar = cantidadAzucar * 1000;
+console. log("Gramos de azúcar:", gramosAzucar);
+// azúcar desperdiciada = 10%
+let azucarDesperdiciada = gramosAzucar * 10 / 100;
+console. log("Azúcar desperdiciada (10%):", azucarDesperdiciada);
+// azúcar utilizable
+let azucarUtilizable = gramosAzucar - azucarDesperdiciada;
+console. log("Azúcar utilizable:", azucarUtilizable);
+// bananas producidas (cada banana usa 'pesoBananas' g de azúcar)
+let bananasProducidas = azucarUtilizable / pesoBananas;
+console. log("Bananas producidas (estimadas):", bananasProducidas);
+    </script>
+</body>
+</html>
