@@ -2,112 +2,460 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Jhan Leyder Duarte - Profesional de la salud y desarrollador en formación. Técnico Auxiliar de Enfermería y estudiante de Tecnólogo en ADSO.">
+    <meta name="theme-color" content="#3498db">
+    <title>Mi Primer Sitio Web - Jhan Leyder Duarte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
         
 </head>
 <body>
         
-        <header class="banner"> 
-            <img src="img/2.png" alt="foto" style="width: 200px; height: 180px;">
-                <h1>Jhan Leyder Duarte Mena </h1>
-                <h2>Profecional de la salud </h2>
-                <p> Tecnico Auxiliar de Enfermería | Estudiante  de Tecnólogo en ADSO  </p>
-                <hr> 
-                <h2> Acerca de mi</h2>
-                <p style="width: 70%; margin: 0 auto; text-align: justify;"> Experimentado  en la atención de pacientes de nivel 3 - 4 de complejidad hospitalaria,  en servicios de emergencia,<br> hospitalización,  cirugía y cuidados paliativos,  brindando una atención oportuna y segura enfocada en el usuario y su familia 
-                </p>
-    <nav>          
-        <div class="opciones">
-            <a href="#formacion">Formación</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contacto">Certificados</a>
-            <a href="#formulario">Formulario</a>
-        </div>
-    </nav>    
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <img src="img/2.png" alt="Jhan Leyder Duarte Mena - Foto de perfil" class="profile-image">
+                </div>
+                <div class="hero-text">
+                    <h1>Jhan Leyder Duarte Mena</h1>
+                    <h2 class="subtitle">Profesional de la Salud & Desarrollador en Formación</h2>
+                    <p class="hero-description">Técnico Auxiliar de Enfermería | Estudiante de Tecnólogo en ADSO</p>
+
+                    <div class="cta-buttons">
+                        <a href="#formulario" class="btn btn-primary">Contáctame</a>
+                        <a href="https://www.linkedin.com/in/jhan-duarte-b87654145" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
-       
-        <h2>Visita mi LinkedIn</h2>
-        <button id="botonLinkedIn"> <a href="https://www.linkedin.com/in/jhan-duarte-b87654145" target="_blank">LinkedIn </a> </button>
-    
-    <section id="formacion">  
-        <h3> Historial educativo</h3>
-        <table border="1" cellpadding="10" cellspacing="0">
-             <hr>
-                <th> Año </th>
-                <th> Estudio </th>
-                <th> Institución </th>
-            <tr> 
-                <td> Cursando</td>
-                <td> Tecnologo Analisis y desarrollo de software </td>
-                <td> SERVICIO NACIONAL DE APRENDIZAJE (SENA)</td>
-            </tr>
-            <tr>
-                <td> 2019 </td>
-                <td> Técnico Auxiliar de Enfermería </td>
-                <td> INSTITUTO DE CAPACITACION NUESTRA SEÑORA DE FATIMA (INFA) </td>
-            </tr>
-            <tr> 
-                <td> 2019 </td>
-                <td> Bachiller </td>
-                <td> CENTRO EDUCATIVO COMUNITARIO OMAR TORRIJOS (CECOT)</td>
-            </tr> 
-            
-        </table>
-    </section>  
-        <hr  />
-        <section id="experiencia">
-        <h2>Experiencia laboral</h2>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2><i class="fas fa-user"></i> Acerca de Mí</h2>
+                <p class="about-text">
+                    Profesional experimentado en la atención de pacientes de nivel 3-4 de complejidad hospitalaria,
+                    con experiencia en servicios de emergencia, hospitalización, cirugía y cuidados paliativos.
+                    Actualmente en transición hacia el desarrollo de software, combinando mi experiencia en salud
+                    con nuevas habilidades tecnológicas para crear soluciones innovadoras.
+                </p>
+            </div>
         </section>
-        <p> <b> Recuperador.</b> </p> 
-        <b> Clínica de Otorrinolaringología y Cirugía Plastica. 2019 - 2020</b>
-        <p > Funciones:
-            <ol>
-                <li>Funciones administrativas (digitando datos, anamnesis,entrevista de Enfermeria, auditoría de historias clínicas)</li>
-                <li>Confort del paciente, (pacientes post operatorio Cx plásticas y funcionales)</li>
-                <li>Monitoreo del estado de salud de paciente</li>
-            </ol><br>
-        </p>
-        <img src="img/otorrino.png" alt="foto"> <br>
-        <hr>
-        <p> <b> Auxiliar de Enfermería en Ginecología y obstetricia..</b> </p> 
-        <p> <b> Hospital Universitario del valle Evaristo García 2020 - actualidad. </b> </p>
-        
-        <p > Funciones:
-            <ol>
-                <li>Atención de Urgencias gineco-obstétricas (hemorragia post parto)</li>
-                <li>Atención al parto humanizado, gestantes con covid-19</li>
-                <li>Atención a pacientes gineco-oncológicas</li>
-                <li>Apoyo a coordinación de enfermería (educación seguridad del paciente)</li>
-                <li>Gestor de medicamentos</li>
-                <li>Auditoria de historias Gineco-Obstetricas</li>
-                <li>Atención de Urgencias gineco-obstétricas (hemorragia post parto)</li>
-            </ol>  
-        </p>
-        <img src="img/huv.jpeg" alt="foto" > <br>
-     </section> 
-        <hr />
-        <section id="habilidades"> 
-        <h2> Habilidades </h2>
-        <p style="text-align: justify;"> 
-            <ul>
-                <li>Atención al paciente</li>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación asertiva</li>
-                <li>Capacidad de adaptación</li>
-                <li>Resolución de problemas</li>
-                <li>Trabajo bajo presión</li>
-            </ul>
-        </p>
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <span>JLD</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about"><i class="fas fa-user"></i> Acerca</a>
+                    <a href="#formacion"><i class="fas fa-graduation-cap"></i> Formación</a>
+                    <a href="#experiencia"><i class="fas fa-briefcase"></i> Experiencia</a>
+                    <a href="#habilidades"><i class="fas fa-star"></i> Habilidades</a>
+                    <a href="#hobbies"><i class="fas fa-heart"></i> Hobbies</a>
+                    <a href="#horario-semanal"><i class="fas fa-calendar"></i> Horario</a>
+                    <a href="#formulario"><i class="fas fa-envelope"></i> Contacto</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Education Section -->
+        <section id="formacion" class="education-section">
+            <div class="container">
+                <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+                <div class="education-grid">
+                    <div class="education-card current">
+                        <div class="year-badge">Cursando</div>
+                        <h3>Tecnólogo en Análisis y Desarrollo de Software</h3>
+                        <p class="institution">SERVICIO NACIONAL DE APRENDIZAJE (SENA)</p>
+                        <div class="status">En progreso</div>
+                    </div>
+                    <div class="education-card">
+                        <div class="year-badge">2019</div>
+                        <h3>Técnico Auxiliar de Enfermería</h3>
+                        <p class="institution">INSTITUTO DE CAPACITACIÓN NUESTRA SEÑORA DE FÁTIMA (INFA)</p>
+                        <div class="status completed">Completado</div>
+                    </div>
+                    <div class="education-card">
+                        <div class="year-badge">2019</div>
+                        <h3>Bachiller</h3>
+                        <p class="institution">CENTRO EDUCATIVO COMUNITARIO OMAR TORRIJOS (CECOT)</p>
+                        <div class="status completed">Completado</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section id="experiencia" class="experience-section">
+            <div class="container">
+                <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+                <div class="timeline">
+                    <div class="timeline-item current">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3>Auxiliar de Enfermería en Ginecología y Obstetricia</h3>
+                                <span class="job-period">2020 - Actualidad</span>
+                            </div>
+                            <h4>Hospital Universitario del Valle Evaristo García</h4>
+                            <ul class="job-responsibilities">
+                                <li><i class="fas fa-check"></i> Atención de urgencias gineco-obstétricas (hemorragia post parto)</li>
+                                <li><i class="fas fa-check"></i> Atención al parto humanizado, gestantes con COVID-19</li>
+                                <li><i class="fas fa-check"></i> Atención a pacientes gineco-oncológicas</li>
+                                <li><i class="fas fa-check"></i> Apoyo a coordinación de enfermería (educación seguridad del paciente)</li>
+                                <li><i class="fas fa-check"></i> Gestor de medicamentos</li>
+                                <li><i class="fas fa-check"></i> Auditoría de historias gineco-obstétricas</li>
+                            </ul>
+                            <div class="job-image">
+                                <img src="img/huv.jpeg" alt="Hospital Universitario del Valle">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3>Recuperador</h3>
+                                <span class="job-period">2019 - 2020</span>
+                            </div>
+                            <h4>Clínica de Otorrinolaringología y Cirugía Plástica</h4>
+                            <ul class="job-responsibilities">
+                                <li><i class="fas fa-check"></i> Funciones administrativas (digitación de datos, anamnesis, entrevista de enfermería)</li>
+                                <li><i class="fas fa-check"></i> Auditoría de historias clínicas</li>
+                                <li><i class="fas fa-check"></i> Confort del paciente (pacientes post operatorio Cx plásticas y funcionales)</li>
+                                <li><i class="fas fa-check"></i> Monitoreo del estado de salud del paciente</li>
+                            </ul>
+                            <div class="job-image">
+                                <img src="img/otorrino.png" alt="Clínica de Otorrinolaringología">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="habilidades" class="skills-section">
+            <div class="container">
+                <h2><i class="fas fa-star"></i> Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-user-md"></i> Habilidades Clínicas</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>Atención al paciente</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Cuidados críticos</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Administración de medicamentos</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-users"></i> Habilidades Interpersonales</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>Trabajo en equipo</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Comunicación asertiva</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="89%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Trabajo bajo presión</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="94%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Habilidades Técnicas</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span>HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Resolución de problemas</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="hobbies-section">
+            <div class="container">
+                <h2><i class="fas fa-heart"></i> Mis Hobbies</h2>
+                <p class="section-description">En mi tiempo libre disfruto de actividades que me permiten crecer personal y profesionalmente:</p>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Lectura</h3>
+                        <p>Libros de medicina, tecnología y desarrollo personal</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Deportes</h3>
+                        <p>Fútbol, natación y actividades al aire libre</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programación</h3>
+                        <p>Aprender nuevos lenguajes y tecnologías</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Música</h3>
+                        <p>Escuchar música y tocar guitarra</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Viajar</h3>
+                        <p>Conocer nuevos lugares y culturas</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Cocina</h3>
+                        <p>Preparar platos tradicionales y experimentar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="tareas-priorizadas" class="goals-section">
+            <div class="container">
+                <h2><i class="fas fa-target"></i> Objetivos Priorizados</h2>
+                <p class="section-description">Mis principales metas y objetivos profesionales en orden de prioridad:</p>
+                <div class="goals-list">
+                    <div class="goal-item">
+                        <div class="goal-number">1</div>
+                        <div class="goal-content">
+                            <h3>Completar Tecnólogo en ADSO</h3>
+                            <p>Finalizar exitosamente el programa de Análisis y Desarrollo de Software en el SENA</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-number">2</div>
+                        <div class="goal-content">
+                            <h3>Certificaciones Tecnológicas</h3>
+                            <p>Obtener certificaciones en tecnologías web modernas y frameworks populares</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-number">3</div>
+                        <div class="goal-content">
+                            <h3>Portafolio de Proyectos</h3>
+                            <p>Desarrollar un portafolio sólido con proyectos que demuestren mis habilidades</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-number">4</div>
+                        <div class="goal-content">
+                            <h3>Especialización Frontend</h3>
+                            <p>Profundizar en JavaScript, React y tecnologías de desarrollo frontend</p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-number">5</div>
+                        <div class="goal-content">
+                            <h3>Conocimientos Backend</h3>
+                            <p>Aprender sobre bases de datos, APIs y desarrollo del lado del servidor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="horario-semanal" class="schedule-section">
+            <div class="container">
+                <h2><i class="fas fa-calendar"></i> Mi Horario Semanal</h2>
+                <p class="section-description">Distribución organizada de mis actividades durante la semana:</p>
+                <div class="schedule-container">
+                    <div class="schedule-grid">
+                        <div class="schedule-header">
+                            <div class="time-slot">Día</div>
+                            <div class="time-slot">Mañana<span>6:00-12:00</span></div>
+                            <div class="time-slot">Tarde<span>12:00-18:00</span></div>
+                            <div class="time-slot">Noche<span>18:00-22:00</span></div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Lunes</div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity study">
+                                <i class="fas fa-book"></i>
+                                <span>Estudio ADSO</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Martes</div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity code">
+                                <i class="fas fa-code"></i>
+                                <span>Práctica Programación</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Miércoles</div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity study">
+                                <i class="fas fa-book"></i>
+                                <span>Estudio ADSO</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Jueves</div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity project">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Proyectos Personales</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Viernes</div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity work">
+                                <i class="fas fa-hospital"></i>
+                                <span>Trabajo en Hospital</span>
+                            </div>
+                            <div class="activity free">
+                                <i class="fas fa-smile"></i>
+                                <span>Tiempo Libre</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Sábado</div>
+                            <div class="activity study">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Estudio Intensivo</span>
+                            </div>
+                            <div class="activity hobby">
+                                <i class="fas fa-running"></i>
+                                <span>Hobbies y Deporte</span>
+                            </div>
+                            <div class="activity social">
+                                <i class="fas fa-users"></i>
+                                <span>Familia y Amigos</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-row">
+                            <div class="day-label">Domingo</div>
+                            <div class="activity rest">
+                                <i class="fas fa-bed"></i>
+                                <span>Descanso</span>
+                            </div>
+                            <div class="activity study">
+                                <i class="fas fa-book-open"></i>
+                                <span>Lectura y Estudio</span>
+                            </div>
+                            <div class="activity planning">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Preparación Semana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <section id="formulario">
             <h2>FORMULARIO DE CONTACTO</h2>
             <p>Si deseas contactarme para oportunidades laborales o colaboraciones, completa este formulario:</p>
 
-            <form>
+            <form id="contact-form">
                 <fieldset>
                     <legend>Información Personal</legend>
 
@@ -186,8 +534,45 @@
                 <button type="reset">Limpiar Formulario</button>
             </form>
         </section>
-        
 
-    
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Jhan Leyder Duarte Mena</h3>
+                        <p>Profesional de la Salud & Desarrollador en Formación</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/jhan-duarte-b87654145" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:jhanleyder@hotmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+573166075801" aria-label="Teléfono">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="https://github.com/jhanleyder08" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; 2025 Jhan Leyder Duarte Mena. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <p>Desarrollado con <i class="fas fa-heart"></i> usando HTML, CSS y JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
 </body>
 </html>
