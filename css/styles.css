@@ -267,19 +267,7 @@ header .p-justificado {
     transform: translateY(-2px);
 }
 
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
-}
-
-.nav-toggle span {
-    width: 25px;
-    height: 3px;
-    background: var(--text-dark);
-    transition: var(--transition);
-}
+/* Navigation toggle styles moved to responsive.css */
 
 /* Sections */
 section {
@@ -1119,8 +1107,75 @@ footer {
 
 /* ===== RESPONSIVE DESIGN ===== */
 
-/* Extra Large Screens (1441px and up) - 4K, Large Monitors */
-@media (min-width: 1441px) {
+/* Mobile First Approach - Base styles are for mobile */
+
+/* Tablets and up (768px+) */
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+        gap: 4rem;
+    }
+
+    .education-grid,
+    .skills-grid,
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Desktop and up (1024px+) */
+@media (min-width: 1024px) {
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .profile-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .education-grid,
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+}
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
     .container {
         max-width: 1400px;
     }
@@ -1142,13 +1197,6 @@ footer {
 
     section {
         padding: 6rem 0;
-    }
-
-    .timeline-content,
-    .education-card,
-    .skill-category,
-    .hobby-card {
-        padding: 3rem;
     }
 }
 
