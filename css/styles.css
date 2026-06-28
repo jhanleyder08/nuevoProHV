@@ -596,6 +596,11 @@ section h2 i {
     background: var(--white);
 }
 
+.portfolio-highlight {
+    border: 1px solid rgba(52, 152, 219, 0.2);
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+}
+
 .section-description {
     text-align: center;
     font-size: 1.1rem;
@@ -660,6 +665,12 @@ section h2 i {
 .hobby-card p {
     color: var(--text-light);
     line-height: 1.6;
+}
+
+.hobby-card .btn {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
 /* Goals Section */
